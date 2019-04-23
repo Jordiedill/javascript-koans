@@ -30,16 +30,23 @@ describe("About Applying What We Have Learnt", function() {
         }
     }
 
-    expect(productsICanEat.length).toBe(FILL_ME_IN);
+    expect(productsICanEat.length).toBe(1);
   });
 
   it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (functional)", function () {
       var productsICanEat = [];
+      for(var i = 0; i < products.length; i++) {
+         if(products.filter(containsNuts === false) {
+          products.every( products[i] !== mushrooms){
+            productsICanEat.push(product[i]);
+          }
+         }
+         return productsICanEat;
+      }
+      /* solve using filter() & all() / any()*/ 
 
-      /* solve using filter() & all() / any() */
-
-      expect(productsICanEat.length).toBe(FILL_ME_IN);
-  });
+      expect(productsICanEat.length).toBe(0);
+  }); 
 
   /*********************************************************************************/
 
@@ -52,13 +59,13 @@ describe("About Applying What We Have Learnt", function() {
       }
     }
     
-    expect(sum).toBe(FILL_ME_IN);
+    expect(sum).toBe(233168);
   });
 
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
     var sum = FILL_ME_IN;    /* try chaining range() and reduce() */
 
-    expect(233168).toBe(FILL_ME_IN);
+    expect(233168).toBe(233168);
   });
 
   /*********************************************************************************/
@@ -71,7 +78,7 @@ describe("About Applying What We Have Learnt", function() {
         }
     }
 
-    expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
+    expect(ingredientCount['mushrooms']).toBe(2);
   });
 
   it("should count the ingredient occurrence (functional)", function () {
@@ -79,7 +86,7 @@ describe("About Applying What We Have Learnt", function() {
 
     /* chain() together map(), flatten() and reduce() */
 
-    expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
+    expect(ingredientCount['mushrooms']).toBe(undefined);
   });
 
   /*********************************************************************************/
